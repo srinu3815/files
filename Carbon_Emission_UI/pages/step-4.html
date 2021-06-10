@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapping suply data</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <section id="main">
+        <header class="header">
+            <div class="logo-img">
+            <img src="../images/Capgemini_Logo_Color_Print - Copy.jpg" alt="Capgemini-Logo">
+            </div>
+            <div class="header-box">
+                <h1 class="heading-text">Carbon Emission Tool</h1>
+                <p class="sub-text">For Scope 3 Emission</p>
+            </div>
+        </header>
+    </section>
+  <section class="header-progress-bar">
+    <div class="header-progress-line">
+        <table>
+            <tr>
+                <td> <a class="progress-bar-item" href="#">1</a> </td>
+                <td><hr class="line"></td>
+                <td> <a class="progress-bar-item" href="#">2</a> </td>
+                <td><hr class="line"></td>
+                <td> <a class="progress-bar-item" href="#">3</a> </td>
+                <td><hr class="line"></td>
+                <td> <a class="progress-bar-item active" href="#">4</a> </td>
+                <td></td>
+              
+            </tr>
+            <tr>
+                <td style="height: 100px;"  colspan="2"> <p class="caption">Set Up Supplier <br> Spend Data</p> </td>
+                <!-- <td></td> -->
+                <td style="height: 100px;" colspan="2"> <p class="caption">Set Up Emission <br> Factor Data</p> </td>
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+                <td style="height: 100px;" colspan="2"> <p class="caption">Mapping Supplier data <br>with Emission Factor <br>Category Data </p> </td>
+                <!-- <td></td> -->
+                <td style="height: 100px;" colspan="2"> <p class="caption">Apply Exclusion  <br> Rules</p> </td>
+
+            </tr>
+
+        </table>
+    </div>
+  </section>
+  <section class="spend-data-container">
+    <div class="data-capture">
+        <h5 class="blue data-capture-text">Data Aggregation</h5>
+        <div class="input-browse">
+            <div class="input-item-box">
+                <div class="input-item">
+                <h4 class="mt-10">Apply Exclusion Rules</h4>
+                <h5 class="input-headind-text"> Procurement Category </h5> 
+                    <div id="step-3">
+   
+                 <form action="">
+                            <div class="drop-down-box">
+                                <div class="drop-down-item">
+                                    <div class="drop-down-text">
+                                        <label for="">Level 0</label>
+                                    </div>
+                                    <div class="drop-down-menu">
+                                        <select class="select-drop-down">
+                                            <option selected><span class="caret"><img src="../images/caret-down.png" alt="caret-dwon"></span></option>
+                                            <option>Name</option>
+                                            <option>Age</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="drop-down-item">
+                                    <div class="drop-down-text">
+                                        <label for="">Level 1</label>
+                                    </div>
+                                    <div class="drop-down-menu">
+                                        <select class="select-drop-down">
+                                            <option selected><span class="caret"><img src="../images/caret-down.png" alt="caret-dwon"></span></option>
+                                            <option>Name</option>
+                                            <option>Age</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="drop-down-item">
+                                    <div class="drop-down-text">
+                                        <label for="">Level 2</label>
+                                    </div>
+                                    <div class="drop-down-menu">
+                                        <select class="select-drop-down">
+                                            <option selected><span class="caret"><img src="../images/caret-down.png" alt="caret-dwon"></span></option>
+                                            <option>Name</option>
+                                            <option>Age</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="drop-down-box">
+                                <div class="drop-down-item">
+                                    <div class="drop-down-text">
+                                        <label for="">Select Exclusion Rule</label>
+                                    </div>
+                                    <div class="drop-down-menu">
+                                        <select class="select-drop-down">
+                                            <option selected><span class="caret"><img src="../images/caret-down.png" alt="caret-dwon"></span></option>
+                                            <option>Name</option>
+                                            <option>Age</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="drop-down-item">
+                                    <div class="drop-down-text">
+                                        <label for="">Year</label>
+                                    </div>
+                                    <div class="drop-down-menu">
+                                        <select class="select-drop-down">
+                                            <option selected><span class="caret"><img src="../images/caret-down.png" alt="caret-dwon"></span></option>
+                                            <option>Name</option>
+                                            <option>Age</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-boxes-3">
+                                <button class="btn-map-sup" type="reset">Reset</button>
+                                <button class="btn-map-sup" type="submit">Save Pages</button>
+                                <button class="btn-map-sup" type="submit">Download Categories <br> Mapping file</button>
+                            </div> 
+                            <input type="file" name="file" id="file" class="file">
+                    <div>
+                      <input type="text" name="file-name" id="file-name" class="file-name" readonly="readonly">
+                      <input type="button" class="btn" value="Browse"><a href=""><button class="upload-4">Upload</button></a>
+                      <br>
+                      <div class="btn-carbon-baseline">
+
+                          <button class="btn-view-carbon-baseline">View Carbon Baseline</button>
+                      </div>
+                    </div>
+
+                        </form>
+                    </div>
+               </div>
+           </div>      
+        </div>
+    </div>
+    <div class="input-val">
+    </div>
+</section>
+
+
+    <footer></footer>
+    <!-- <footer>
+        <div class="footer">
+            <div class="foo-items">
+                <span>My Solutions</span>
+                <span>New on 890</span>
+            </div>
+            <div class="foo-items">
+                <span>About Us</span>
+                <span>Services</span>
+            </div>
+            <div class="foo-items">
+                <span>About 890</span>
+                <span>Know the Vendors</span>
+            </div>
+            <div class="foo-items">
+                <span>Help</span>
+                <span>Site Map</span>
+            </div>
+            <div class="foo-items">
+                <span>Feedback</span>
+                <span>Contact Us</span>
+            </div>
+            <div class="foo-items">
+                <span><img src="./images/foo-CG.jpg" alt="footer-CG-logo"></span>
+                <span>Copyright &#169; 2021 Capgemini.All Rights Reserved.Contact Us</span>
+            </div>
+           
+        </div>
+    </footer>         -->
+ <script src="../js/jquery.js"></script>       
+ <script src="../js/script.js"></script>       
+</body>
+</html>

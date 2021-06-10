@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Up Emission Factor Data</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <section id="main">
+        <header class="header">
+            <div class="logo-img">
+            <img src="../images/Capgemini_Logo_Color_Print - Copy.jpg" alt="Capgemini-Logo">
+            </div>
+            <div class="header-box">
+                <h1 class="heading-text">Carbon Emission Tool</h1>
+                <p class="sub-text">For Scope 3 Emission</p>
+            </div>
+        </header>
+    </section>
+  <section class="header-progress-bar">
+    <div class="header-progress-line">
+        <table>
+            <tr>
+                <td> <a class="progress-bar-item" href="#">1</a> </td>
+                <td><hr class="line"></td>
+                <td> <a class="progress-bar-item active" href="#">2</a> </td>
+                <td><hr class="line"></td>
+                <td> <a class="progress-bar-item" href="#">3</a> </td>
+                <td><hr class="line"></td>
+                <td> <a class="progress-bar-item" href="#">4</a> </td>
+                <td></td>
+              
+            </tr>
+            <tr>
+                <td style="height: 100px;"  colspan="2"> <p class="caption">Set Up Supplier <br> Spend Data</p> </td>
+                <!-- <td></td> -->
+                <td style="height: 100px;" colspan="2"> <p class="caption">Set Up Emission <br> Factor Data</p> </td>
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+                <td style="height: 100px;" colspan="2"> <p class="caption">Mapping Supplier data <br>with Emission Factor <br>Category Data </p> </td>
+                <!-- <td></td> -->
+                <td style="height: 100px;" colspan="2"> <p class="caption">Apply Exclusion  <br> Rules</p> </td>
+
+            </tr>
+
+        </table>
+    </div>
+  </section>  
+<section class="spend-data-container">
+    <div class="data-capture">
+        <h5 class="blue data-capture-text">Data Capture</h5>
+        <div class="input-browse">
+           <div class="input-item-box">
+                <div class="input-item">
+                <h5 class="input-headind-text">Load DEFRA/ADEME Sub-Category Data</h5> 
+                <div>
+                    <input type="file" name="file" id="file" class="file">
+                    <div>
+                      <input type="text" name="file-name" id="file-name" class="file-name" readonly="readonly">
+                      <input type="button" class="btn" value="Browse">
+                    </div>
+                  </div>
+               </div>
+           </div>      
+        </div>
+        <a href=""><button class="upload-2">Upload</button></a>
+    </div>
+    <div class="input-val">
+    </div>
+</section>
+  
+    <footer></footer>
+ <script src="../js/jquery.js"></script>       
+ <script src="../js/script.js"></script>       
+</body>
+</html>
