@@ -1,0 +1,25 @@
+.dropdown-display, .dropdown-display-label {
+    position: relative;
+    display: block;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    background-color: #fff;
+    width: 300px;
+    height: 20px;
+    overflow-y: scroll;
+}
+
+.row>.dropdown-display, .dropdown-display-label {
+  border: 0 !important;
+  border-bottom: 2px solid #ccc !important;
+}
+

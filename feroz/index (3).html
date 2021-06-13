@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Searchable Multi-select Dropdown Demos</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="https://bootswatch.com/superhero/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./jquery.dropdown.css">
+  <script src="./jquery.dropdown.js"></script>
+  <style>
+    .container {
+      margin: 150px auto;
+    }
+  </style>
+</head>
+
+<body>  
+  <div class="container">
+    <h2> Searchable Multi-select Dropdown Demos</h2>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="text-info">Multi-select+JSON+Token Mode</div><br>
+        <div class="dropdown-mul-1" id="demo">
+          <label for="">Supplier</label>
+          <select style="display:none" name="" id="data" multiple placeholder="Select"> </select>
+        </div>
+      </div>
+      <button onclick="submit()">submit</button>
+    </div>
+  </div>
+  <script>
+    var json1 = [{
+    id: '1',
+    name: 'First Item',
+  },
+  {
+    id: '2',
+    name: 'Second Item',
+  },
+  {
+    id: '3',
+    name: 'Third Item',
+  },
+  {
+    id: '4',
+    name: 'First Item',
+  },
+  {
+    id: '5',
+    name: 'Second Item',
+  },
+  {
+    id: '6',
+    name: 'Third Item',
+  },
+  {
+    id: '7',
+    name: 'First Item',
+  },
+  {
+    id: '8',
+    name: 'Second Item',
+  },
+  {
+    id: '9',
+    name: 'Third Item',
+  },
+  {
+    id: '10',
+    name: 'First Item',
+  },
+  {
+    id: '11',
+    name: 'Second Item',
+  },
+  {
+    id: '12',
+    name: 'Third Item',
+  },
+  {
+    id: '13',
+    name: 'First Item',
+  },
+  {
+    id: '14',
+    name: 'Second Item',
+  },
+  {
+    id: '15',
+    name: 'Third Item',
+  },
+]; 
+    var list = [1,2,3,4,5,6,7,8,9,10]
+    $('#demo').dropdown({
+      data: json1,
+      limitCount: 40,
+      multipleMode: 'label',
+      choice: function () {
+        // console.log(arguments,this);
+      }
+    });    
+    function submit(){
+      var foo = $('#data').val(); 
+      console.log('mutliple',foo);
+    }
+  </script>
+  </div>
+
+</html>
